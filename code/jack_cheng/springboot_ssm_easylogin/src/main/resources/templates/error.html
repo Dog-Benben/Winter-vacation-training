@@ -1,0 +1,15 @@
+<html xmlns:th="http://www.thymeleaf.org"
+ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>错误页面</title>
+</head>
+<body>
+<h1 th:text="${error}">这个就看error写什么</h1>
+<br>
+	<form th:action="@{~/register}" method="post">
+	<input type="submit" name="重新注册">
+	</form>
+</body>
+</html>
