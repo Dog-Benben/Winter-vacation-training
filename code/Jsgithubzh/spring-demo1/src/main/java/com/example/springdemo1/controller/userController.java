@@ -18,6 +18,7 @@ public class userController {
 	{
 		boolean sorf = userService.findUser(user);
 		System.out.println(sorf);
+		//数据库中有效用户为：(admin，12345)和(admin@qq.com，123)，除了这两个账户外都登录失败
 		if(sorf==true)
 		return "sss.html";
 		else
